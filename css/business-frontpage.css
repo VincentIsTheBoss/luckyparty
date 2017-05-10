@@ -1,0 +1,95 @@
+/*
+ * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #c5c6c9;
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    height: 250px;
+    background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+    background-image: url(fond_homepage.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #08600b;
+}
+
+.img-center {
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 0px #00520b;
+
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #039022;
+  }
+  .navbar-inverse .navbar-toggle {
+    border-color: #076508;
+}
+.navbar-inverse .navbar-brand {
+    color: #039022;
+
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #037408;
+}
+.row {
+   margin-right: auto ;
+   margin-left: auto ;
+}
+.img-circle {
+    border-radius: 25%;
+}
+.navbar-inverse {
+    background-color: #000000;
+    border-color: #003806;
+    box-shadow: 0px 0px 20px 0px rgb(0, 77, 17);
+}
+.indexImg{
+  transition: all 1s ease;
+
+}
+.indexImg:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 50px green;
+}
+.navbar-nav li a{
+  transition: all 1s ease;
+}
+.navbar-nav li a:hover{
+  transform: scale(1.1);
+}
+.nav>li{
+  text-align: center;
+}
+.navbar-brand{
+  transition: all 1s ease;
+}
+.navbar-brand:hover{
+    transform: scale(1.1);
+}
+
+.col-sm-4{
+  /*position: relative;
+    min-height: 1px;
+    padding-right: 100px;
+    padding-left: 100px;
+}*/
