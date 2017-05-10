@@ -1,67 +1,109 @@
-<?php
-session_start();
-
-	require "conf.php";
-	require "lib.php";
-	include "header.php";
-
-?>
-<section>
 	<?php
+		session_start();
+		require "lib.php";
+		include "header.php"
+	?>
+
+  <!-- Image Background Page Header -->
+  <!-- Note: The background image is set within the business-casual.css file. -->
+  <header class="business-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="tagline ">Lucky Party</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+
+  <!-- /.row -->
+
+  <hr>
+  <a href="#">
+    <div class="col-sm-4">
+      <img class="img-circle img-responsive img-center indexImg" src="http://placehold.it/300x300" alt="">
+  </a>
+	<center>
+		<h2> Matchmaking</h2></center>
+  <p>
+
+  </p>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+
+      <a href="#">
+        <img class="img-circle img-responsive img-center indexImg" src="http://placehold.it/300x300" alt="">
+      </a>
+
+      <center>
+        <h2> Evenements</h2></center>
+      <p></p>
+    </div>
+
+    <a href="#">
+      <div class="col-sm-4">
+        <img class="img-circle img-responsive img-center indexImg" src="http://placehold.it/300x300" alt="">
+    </a>
+    <center>
+      <h2> Musique</h2></center>
+    <p> </p>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+			<h2>Ce que nous faisons</h2>
+			<p>Lucky Party est site de référencement permettant de trouver des événement et des personnes afin de sortir sur Paris</p>
+
+        <a class="btn btn-default btn-lg" href="#">Cliquez pour remonter</a>
+      </p>
+    </div>
+    <!-- /.row -->
+    <div class="container">
 
 
-   	$db = dbconnect();
-   	$result=$db->query("SELECT * FROM users WHERE is_deleted=0");
-  ?>
-
-  <table border="1px">
-             <tr>
-                 <th>Id</th>
-                 <th>nom</th>
-                 <th>prenom</th>
-								 <th>sexe</th>
-                 <th>Email</th>
-                 <th>date_naissance</th>
-                 <th>ville</th>
-                 <th>CP</th>
-                 <th>Date de création</th>
-                 <th>Date de update</th>
-                 <th>Suprimer</th>
-                 <th>Modifier</th>
-  </tr>
-  <?php
-  foreach ($result->fetchAll() as $value) {
-  	echo "<tr>
-                 <td>".$value["id"]."</td>
-                 <td>".$value["nom"]."</td>
-                 <td>".$value["prenom"]."</td>
-								 <td>".$listOfGender[$value["sexe"]]."</td>
-                 <td>".$value["email"]."</td>
-                 <td>".$value["date_naissance"]."</td>
-                 <td>".$value["ville"]."</td>
-                 <td>".$value["CP"]."</td>
-                 <td>".$value["date_created"]."</td>
-                 <td>".$value["date_updated"]."</td>
-                 <td> <center><a href='deleteUsers.php?id=".$value["id"]."'>&cross;</a></center>  </td>
-                 <td> <center><a href='modifyUsers.php?id=".$value["id"]."'>&cross;</a></center> </td>
-                 </tr>";
-  }
 
 
-  //nouvelle colonne avec un lien  pointant delete.php
-  //envoyer sur cette page via le GET l'id du users
-  //sur la page en question supprimer de la base l'users
-  //et rediriget l'internaute ici
-  ?>
-  </table>
+      <div class="col-sm-4">
+        <h2>Contact Us</h2>
+        <address>
+                    <strong>Start Bootstrap</strong>
+                    <br>3481 Melrose Place
+                    <br>Beverly Hills, CA 90210
+                    <br>
+                </address>
+        <address>
+                    <abbr title="Phone">P:</abbr>(123) 456-7890
+                    <br>
+                    <abbr title="Email">E:</abbr> <a href="mailto:#">name@example.com</a>
+                </address>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; Lucky Party 2017</p>
+        </div>
+      </div>
+      <!-- /.row -->
+    </footer>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
 
 
-
-
-
-
-
-  </section>
-  <?php
-  	include "footer.php";
-  ?>
