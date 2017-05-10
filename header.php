@@ -56,8 +56,11 @@ require_once "lib.php";
 					 	<?php } else { ?>
 							<li>
 							 <a href="disconnect.php">Deconnexion</a>
-               <a href="groupResearch.php">Recherche de groupe </a>
-						 </li>
+			          </li>
+                <li>
+                <a href="groupResearch.php">Recherche de groupe </a>  
+                </li>
+
 						<?php }; ?>
 	        </ul>
 	      </div>
