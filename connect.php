@@ -55,14 +55,84 @@ if (isset($_POST["email"]) && isset($_POST["pwd"])) {
 
 ?>
 <?php echo $msg_error;?>
-<form method="POST" action="connect.php">
-		<input type="email" name="email" placeholder="Votre mail">
-		<br>
-		<input type="password" name="pwd" placeholder="Votre mot de passe">
-		<br>
-		<input type="image" src="img/validation.jpg" width="20px">
-</form>
+<body>
 
+
+	<div class="row">
+		<div class="col-lg-10 col-md-9">
+			<!--                        <div class="col-lg-1"><img src="img/ajout_contact.png" alt=""></div>-->
+			<h1 class="titre-contact">Connectez-vous</h1>
+		</div>
+
+	</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="tableaudebord">
+					<div class="contact_container">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">
+
+								<p><br><br><br><br><br><br><br><br></p>
+								<div class="nb_com" style="display:none">9</div>
+							</div>
+						</div>
+					</div>
+
+					<div class='container'>
+						<div class='row'>
+
+							<form method="POST" class="form-horizontal" role="form" action="connect.php">
+								<div class='row'>
+									<div class="form-group">
+										<label for="mail" class="col-sm-3 control-label">Email :</label>
+										<div class="col-sm-4">
+											<input type="email" class="form-control" name="email" placeholder="blabla@blabla.bla" required="requried" value="<?php echo (isset($form[" email "]))?$form["email "]:" " ?>">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="mobile" class="col-sm-3 control-label">Mot de passe :</label>
+
+										<div class="col-sm-4">
+											<input type="password" class="form-control" name="pwd" placeholder="Votre mot de passe" required="requried">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-6">
+											<div class="boutton">
+												<div class="col-lg-7 col-md-7 hidden-md hidden-xs"></div>
+												<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-xs-12">
+													<button name="submit" id="submit" type="submit" value="submit" class="btn btn-default"><span class="glyphicon glyphicon-floppy-disk"></span>Go<span class="glyphicon glyphicon-chevron-right"></span></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+						</div>
+
+						</form>
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<footer>
+		<div class="row">
+			<div class="col-lg-12">
+				<p>Copyright &copy; Lucky Party 2017</p>
+			</div>
+		</div>
+		<!-- /.row -->
+	</footer>
 <?php
 
 
